@@ -13,6 +13,11 @@ app.get('/helloworld',function(req,res){
 
     res.send(" hello world")
 })
+app.get('/byebye',function(req,res){
+
+ res.send("bye bye")
+
+})
 // var express=require('express')
 //  var app=express()
 

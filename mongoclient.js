@@ -20,7 +20,7 @@ MongoClient.connect(url,function(error,db){
     else
       console.log("connected to the database")
     var dbo=db.db("retail")
-    dbo.collection("custumer").insert({"id":"1","name":"ravi","custumertype":"regular","address":"hinjewadi"})
+    dbo.collection("custumer").insert({"id":"4","name":"priyanshu","custumertype":"regular","address":"hinjewadi"})
     console.log("database created")
     if (error)
       {
