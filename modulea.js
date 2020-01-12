@@ -7,5 +7,5 @@ function bye()
 {
     console.log("bye")
 }
-var mycall=
-module.exports.hello=hello;
+
+var mycall=module.exports.hello=hello;

@@ -6,7 +6,8 @@ app.get('/',function(req,res){
 })
 var students={
     1:'Abhishek',
-    2:'Ravi'
+    2:'Ravi',
+    3:'kamal'
 }
 
 app.get('/students/:id',function(req,rep){
