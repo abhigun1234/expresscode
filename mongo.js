@@ -17,20 +17,21 @@ creating customer collection
 //step1 
 const mongoes=require('mongoose');
 //step 2
-mongoes.connect('mongodb://localhost:27017/myretail',{useNewUrlParser: true})
+mongoes.connect('mongodb://localhost:27017/myretail',
+{useNewUrlParser: true})
 //step 3"productname" : "addidas", "price" : "3456", "productdescription" : "addidas sports shoes"
 const Product =mongoes.model('product',{name:String,price:String,description:String})
-const p1= new Product({name:'addidas',price:'2345',description:'addidas sports'})
+const p1= new Product({name:'rebook',price:'23456',description:'rebook sports'})
 p1.save().then(() => console.log('done'));
 Product.find(function (err, data) {
             if (err) return console.error(err);
-            console.log(data)
-            // for (i=0;i<data.length;i++)
+           // console.log(data)
             //     {
-            //         console.log(data[i].name);
-            //     }
-           // res.send(data[0].name)
-          })
+                //         console.log(data[i].name);
+                //     }
+                // res.send(data[0].name)
+            })
+            // for (i=0;i<data.length;i++)
 
 //find the custmer data 
 
@@ -47,13 +48,13 @@ Product.find(function (err, data) {
       })
       
       app.get('/getProduct',function(req,res){
-        Custumer.find(function (err, data) {
+        Product.find(function (err, data) {
             if (err) return console.error(err);
             // for (i=0;i<data.length;i++)
             //     {
             //         console.log(data[i].name);
             //     }
-            res.send(data[0].name)
+            res.send(data)
           })
     
       
