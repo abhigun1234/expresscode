@@ -5,5 +5,5 @@ function helloWorld()
 {
     console.log("hello world")
 }
-setTimeout(helloWorld,5000)
-setInterval(helloWorld,2000)
+ setTimeout(helloWorld,5000)
+ setInterval(helloWorld,2000)

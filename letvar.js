@@ -1,5 +1,6 @@
 var a=1
 var b=2
+let c=2
 if(a==1)
     {
 
@@ -10,6 +11,7 @@ if(a==1)
     }
     console.log(a)
     console.log(b)
+    console.log("value of c==",c)
 
 //name less funtion
 
